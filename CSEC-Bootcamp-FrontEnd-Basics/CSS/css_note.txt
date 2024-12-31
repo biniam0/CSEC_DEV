@@ -1,0 +1,17 @@
+Why do we need CSS?
+    CSS - stands for Cascading Style Sheet
+    CSS: is used style our webpages
+
+How to add CSS?
+    Inline - using attribute called style inside the HTML tab 
+    Internal - add style tag inside head tag 
+    External - use separate file, then link it in the head tag
+
+CSS Selectors
+    Element Selector
+    Class Selector - can be applied to many elements
+    Id Selector - can be applied to one element
+    Attribute Selector - syntax=> tag[attribute=value]
+    Univeral Selector - apply the styles where the sheet is linked
+
+    CSS Specificity - ????
