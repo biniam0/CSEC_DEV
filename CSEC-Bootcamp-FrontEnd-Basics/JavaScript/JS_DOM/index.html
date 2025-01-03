@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="screen">
+        <p id="screen_content">hello</p>
+      </div>
+      <button id="name" onclick="name_fun()">Name</button>
+      <button id="dept" onclick="dept_fun()">Dept</button>
+      <button id="campus" onclick="campus_fun()">Campus</button>
+      <!-- <p>This is new</p> -->
+    </div>
+    <script src="./dom.js"></script>
+    <!-- <script>
+
+      const element = document.getElementById("container");
+      const para = document.createElement("p");
+      const node = document.createTextNode("This is new.");
+      para.appendChild(node);
+
+      element.appendChild(para);
+    </script> -->
+  </body>
+</html>

@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
 }
@@ -29,6 +30,7 @@ body {
 }
 
 .three {
+  display: flex;
   flex-grow: 1;
 }
 
@@ -37,7 +39,8 @@ body {
   padding-right: 20px;
 }
 .three button {
-  justify-self: flex-end;}
+  justify-self: flex-end;
+}
 
 .products {
   display: flex;
@@ -47,21 +50,18 @@ body {
   gap: 20px;
 }
 
-/* .p1,
-.p2,
-.p3 {
-  flex-grow: 1;
-} */
- 
 .p1 {
-  position: relative;
   display: grid;
   width: 280px;
   border: 1px solid;
   border-radius: 20px;
-  
+  position: relative;
 }
-
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
 img {
   justify-self: center;
   width: 60%;
@@ -69,20 +69,24 @@ img {
   border-radius: 20px;
 }
 
-.p1 i {
-  border: 0.8px solid rgb(126, 126, 156);
-  border-radius: 50%;
-  width: 25px;
-  height: 24px;
-}
+/* .p1 a {
+  display: grid;
+  justify-self: flex-end;
+  border: none;
+  text-align: right;
+  width: 35px;
+  margin: 10px 10px;
+  background: none;
+  cursor: pointer;
+} */
+
 .data {
   display: flex;
   justify-content: space-between;
-  padding: 0px 15px ;
+  padding: 0px 15px;
   gap: 10px;
   flex-grow: 2;
 }
-
 
 .price {
   color: white;
@@ -98,5 +102,31 @@ img {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   overflow: hidden;
-  padding: 0 10px ;
+  padding: 0 10px;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  background-color: black;
+  gap: 0;
+}
+
+.footer-items p {
+  display: grid;
+  justify-content: right;
+  flex-grow: 1;
+  padding: 10px;  
+}
+
+.footer-items a {
+  display: grid;
+  justify-content: left;
+  flex-grow: 1;
+  color: white;
 }

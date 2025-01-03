@@ -1,0 +1,9 @@
+Input Validation
+Authentication - confirm user are who they say tehy are
+Authorization - 
+bcrypt - to hash our passwords
+CSRF (Cross Site Request Forgery)
+    Session based -
+    Token based - 
+Secure File Handling
+     

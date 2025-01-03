@@ -15,3 +15,53 @@ CSS Selectors
     Univeral Selector - apply the styles where the sheet is linked
 
     CSS Specificity - ????
+
+CSS Properties
+    Color properties:
+        background-color 
+        color
+    Tips:
+        colorhunt.oo
+        csfieldguid.org
+
+    Font properties:
+        font-size, font-weight, font-family
+    Tips:
+        fonts.google.com
+
+    Text-Align
+
+    Inspection
+
+    CSS Box Model
+        padding, margin, border 
+        div tag
+
+    Tips:
+        Pesticide for Chrome: for removing bugs in css
+
+CSS Positioning
+    Static 
+    Relative
+    Absolute - position relative to nearest positioned ancestor or top left corner of webpages  
+    Fixed - position relative to top left corner of browser window
+
+CSS Display
+    Block - take up the entire block and we can set the height and width of the box
+    Inline - elements can go in the same line with default size(the size the item inside)
+    Inline-Block - can do both the aboves
+
+CSS Float
+    It is outdated css property cuz we can achieve the property using flexbox, grid and bootstrap
+
+
+How to Create Responsive Websites?
+    Media Query - used by adding breakpoints to define responsive layouts
+    CSS Grid - a layout method for arranging items in rows or columns
+    CSS Flexbox - 
+    External Frameworks like Bootstrap 
+
+
+
+
+

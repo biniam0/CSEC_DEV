@@ -17,7 +17,7 @@ let me = {
 };
 
 // dot notation
-age = me.age
+let age = me.age
 // console.log(age)
 
 // bracket notation
@@ -27,7 +27,7 @@ age = me["age"]
 let num = [1,2,3,4,5,6]
 
 num.push(7)
-len = num.length
+let len = num.length
 
 
 function greet(a, b) {
@@ -38,9 +38,52 @@ function greet(a, b) {
 function sumOfThree(num) {
     let x = num / 3
 
-    if () {
-
-    }
-
 }
-greet(3, 5)
+
+let x = 4
+// x == 4 ? console.log("True"): console.log("False")
+
+// function swap(a, b) {
+//     let temp = a
+//     a = b
+//     b = temp
+//     console.log(a, b)
+// }
+
+
+
+const swap = (a, b) => {
+    let temp = a
+    a = b
+    b = temp
+    console.log(a, b)}
+
+function grade(mark) {
+    if (mark > 100 || mark < 0) {
+        console.log("Invalid Mark")
+    }  
+    else if(mark >= 90 && mark <= 100){
+        console.log("A")
+    }
+    else if (mark >= 80 && mark <= 89) {
+        console.log("B")
+    }
+    else if (mark >= 70 && mark <= 79) {
+        console.log("C")
+    }
+    else if (mark >= 60 && mark <= 69) {
+        console.log("D")
+    }
+    else if (mark >= 0 && mark <= 59) {
+        console.log("F")
+    }
+}
+
+grade(99)
+
+// document.getElementById("example") = grade(99)
+
+
+import {data} from './es6beyond.js'
+
+console.log(data)
