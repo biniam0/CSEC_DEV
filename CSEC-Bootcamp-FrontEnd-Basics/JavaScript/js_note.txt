@@ -112,8 +112,9 @@ padStart() and padEnd()
             - no padding happens if specified len is less than the original
 
 Classes 
-    classes are template for js objects 
-    
+    - classes are template for js objects 
+    - classes are ES6 features 
+    - provides a more structured and cleaner way to work with objects compared to traditional constructor functions
 
 
 

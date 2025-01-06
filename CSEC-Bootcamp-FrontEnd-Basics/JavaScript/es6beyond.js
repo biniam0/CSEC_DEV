@@ -131,6 +131,23 @@ class Arithmetic {
     }
 }
 
-const temp = new Arithmetic(4,3)
-console.log(temp.add())
-const 
+class Product {
+    constructor(name, price) {
+        this.name = name
+        this.price = price
+    }
+
+    displayProduct() {
+        console.log(`Product: ${this.name}`)
+        console.log(`Price: $${this.price.toFixed(2)}`)
+    }
+
+    calculateTotal(sales_tax) {
+        return this.price + (this.price * sales_tax)
+    }
+}
+
+const p1 = new Product("Shirt", 100)
+console.log(p1.calculateTotal(1))
+
+
