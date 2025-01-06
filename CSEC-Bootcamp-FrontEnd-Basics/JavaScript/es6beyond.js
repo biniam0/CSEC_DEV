@@ -151,3 +151,26 @@ const p1 = new Product("Shirt", 100)
 console.log(p1.calculateTotal(1))
 
 
+const url = "www.w3.com"
+
+function get() {
+    fetch(url)
+    .then((r) => r.json())
+    .then((json) => {
+        console.log(json[0])
+    }).catch((error) => {
+        console.log("Can't parse the url")
+    })
+}
+
+async function gett() {
+    const response = await fetch(url)
+    const json = await response.json()
+
+    console.log(json[0])
+}
+
+const numbers = new Set([1,2,"4",4,5])
+console.log(numbers)
+
+

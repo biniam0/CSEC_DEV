@@ -117,19 +117,27 @@ Classes
     - provides a more structured and cleaner way to work with objects compared to traditional constructor functions
 
 
+Trailing Commas 
+    JSON is based on a very restricted subset of Js
+        in json trailing commas are not allowed
+    trailing commas are commas those came after the last 
+    item in the list 
 
+Async and Await 
+    Async enables your program to start and responsive to other 
+        events while the started program is running 
+    Await allows for pausing execution until a promise is resolved
+        Promise - is an obj representing the eventual completion or failure of 
+            an asynchronous operation
 
+Set 
+    - is a collection of unique values.
+    - Each value can only occur once in a Set.
+    - the values can be of any type, primitive values or objects.
+    - has a methods like size, add, delete, has and clear 
 
-
-
-
-
-
-
-
-
-
-
+What's next?
+    
 
 
 
@@ -144,4 +152,5 @@ Classes
     - primitive type undefined???
     - are rest and spread operator the same??
     - why do we need Rest operator while there is spread???
-    - can we pop from const array???
+    - can we pop from const array???.
+    - await, async and promise????
