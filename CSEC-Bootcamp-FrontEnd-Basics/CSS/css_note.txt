@@ -49,7 +49,7 @@ CSS Positioning
 CSS Display
     Block - take up the entire block and we can set the height and width of the box
     Inline - elements can go in the same line with default size(the size the item inside)
-    Inline-Block - can do both the aboves
+    Inline-Block - can do both of the aboves
 
 CSS Float
     It is outdated css property cuz we can achieve the property using flexbox, grid and bootstrap

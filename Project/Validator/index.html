@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Validator</h3>
+    <div class="container">
+      <form action="#" id="form">
+        <div class="email">
+          <span>Email:</span>
+          <input type="text" id="email" placeholder="Enter your email" />
+          <span id="text"></span>
+          <button onclick="validator()">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      function validator() {
+        var form = document.getElementById("form");
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text");
+
+        let temp = "valid";
+        if (email.endsWith("@gmail.com")) {
+          valid(temp);
+        } else {
+          let temp = "invalid";
+          valid(temp);
+        }
+      }
+      function valid(temp) {
+        const element = document.querySelector(".container");
+        const tag = document.createElement("span");
+
+        if (temp == "valid") {
+          const item = document.createTextNode("Valid");
+          tag.appendChild(item);
+          element.appendChild(tag);
+        } else {
+          const item = document.createTextNode("Invalid");
+          tag.appendChild(item);
+          element.appendChild(tag);
+        }
+        element.querySelector("span")?.remove();
+
+
+      }
+    </script>
+  </body>
+</html>

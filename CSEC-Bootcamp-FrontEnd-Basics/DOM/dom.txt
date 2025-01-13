@@ -1,0 +1,38 @@
+DOM - Document Object Model
+    - used to manipulate content, style and structure
+    - is one of the most unique and useful tools of Js
+
+
+Seleting Elements 
+    - Get elements by id
+    - Get element by class name 
+    - Get element by tag name 
+    - Query selector 
+    - Query selector all 
+
+Creating Elements 
+    - creating elements using the createElement method from the document 
+
+Adding Elements 
+    - using the adding elements append or appendChild method
+Modifying Texts
+    - we can select inner element or text using
+        - innerText
+        - innerHTML (not recommended)
+        - textContent
+
+Modifying Attribute and Classes
+    - add attribute using setAttribute 
+    - remove using removeAttribute
+    - get using getAttribute
+    Specifically we can add classes using classList
+        - has methods like add, remove and contain
+        - classList.add("class-name")
+        - and also check if it contains one contain method
+Remove Element - using remove methods
+
+Parent Traversal
+    - we can traverse using parentNode and parentElement
+Child Traversal
+    - we can traverse using childNode and childElement
+    

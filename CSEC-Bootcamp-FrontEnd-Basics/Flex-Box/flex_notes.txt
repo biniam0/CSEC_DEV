@@ -1,0 +1,6 @@
+Display Flex
+    What is it and how does it work?
+
+Flex Direction
+    flex-direction 
+    flex-basis - based on the main axis 
