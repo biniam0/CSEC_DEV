@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="event.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Event Listeners</h3>
+    <div class="container">
+      <!-- <div class="card card1">
+        <h4>Example 1</h4>
+        <button >Enter</button>
+      </div>
+      <div class="card card2">
+        <h4>Example 2</h4>
+        <button class="btn2">Enter</button>
+      </div>
+      <div class="card card3">
+        <h4>Example 3</h4>
+        <button>Enter</button>
+      </div> -->
+      <button class="reveal-btn boxes">Reveal More</button>
+      <div class="hidden-content boxes">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nam
+        beatae dicta quae magnam. Omnis quo, velit harum odio ex totam sit
+        quisquam cum. Alias ab ratione nisi dolores voluptatibus recusandae
+        magnam est minima id quibusdam qui veritatis necessitatibus aspernatur
+        iste eius consectetur totam impedit, mollitia error ipsa consequuntur
+        ducimus?
+      </div>
+    </div>
+    <script>
+      // const btn2 = document
+      //   .querySelector(".btn2")
+      //   .addEventListener("click", alertBtn);
+      function alertBtn() {
+        alert("I am Coding right Now!");
+      }
+
+      const newbg = document.querySelector(".card2");
+      function changebg() {
+        newbg.style.backgroundColor = "blue";
+      }
+      function returnbg() {
+        newbg.style.backgroundColor = "rgb(86, 82, 82)";
+      }
+      // newbg.addEventListener("mouseover", changebg);
+      // newbg.addEventListener("mouseout", returnbg);
+      const container = document.querySelector(".container");
+      
+      const revealBtn = document.querySelector(".reveal-btn");
+      const hiddenContent = document.querySelector(".hidden-content");
+      console.log(hiddenContent.classList);
+      function revealContent() {
+        if (container.hasChildNodes("hidden-content")) {          
+          hiddenContent.style.display = "none";
+        } else if (!container.hasChildNodes("hidden-content")) {
+          hiddenContent.style.display = "block"
+        }
+      }
+      revealBtn.addEventListener("click", revealContent);
+    </script>
+  </body>
+</html>

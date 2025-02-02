@@ -1,36 +1,39 @@
-// const screen = document.getElementById('screen');
-const screen = document.getElementById('screen');
-
-const element = document.getElementById("container");
-const para = document.createElement("button");
-const node = document.createTextNode("Age");
-para.appendChild(node);
-element.appendChild(para);
-
-const new_button = document.getElementsByTagName("button")[3];
-const age_click = document.createAttribute("onclick")
-age_click.value = "age_fun()"
-new_button.setAttributeNode(age_click)
- 
+// const title = document.querySelectorAll(".list-items");
+// for (i = 0; i < title.length; i++) {
+//     title[i].style.fontSize = "3rem";
+// }
+// // console.log(title);
 
 
 
+// Creating Element
+const ul = document.querySelector("ul")
+const li = document.createElement("li")
+li.innerText = "Spider Verse"
+li.classList.add("list-items")
+
+// console.log(li.classList.contains("list-items"));
+
+ul.append(li)
 
 
-function name_fun() {
-    screen.textContent = "Biniam"
-}
-function dept_fun() {
-    
-    screen.textContent = "SWE"
-}
-function campus_fun() {
-    screen.textContent = "ASTU"
-}
-function campus_fun() {
-    screen.textContent = "ASTU"
-}
-function age_fun() {
-    screen.textContent = "21"
-}
 
+// Modifying the Text 
+const firstListItem = document.querySelector(".list-items")
+// console.log(firstListItem.innerText);
+// console.log(firstListItem.textContent);
+// console.log(firstListItem.innerHTML);
+
+
+// Traversing the DOM
+
+// console.log(ul.parentNode);
+// const html = document.documentElement
+// console.log(html.parentNode);
+const div = document.querySelector("div")
+// console.log(div.childNodes);
+
+console.log(ul.previousElementSibling );
+
+let addition = (a, b) => a+b
+console.log(addition(1,4))
